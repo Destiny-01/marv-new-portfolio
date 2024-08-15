@@ -1,3 +1,4 @@
+import { ICaseStudy } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -9,7 +10,7 @@ function CaseStudy({ title, description, image, color, link }: ICaseStudy) {
       className={`bg-[${color}] w-full p-8 rounded-lg`}
       style={{ backgroundColor: color }}
     >
-      <Image
+      <img
         src={image}
         alt={title}
         width={0}
