@@ -16,7 +16,7 @@ export default function Home() {
           Designing For <br /> Web3 Companies
         </h1>
         <div className="md:flex mt-6 gap-12">
-          <p className="md:w-[400px] font-medium text-base leading-5 md:leading-6 md:text-[21px]">
+          <p className="md:w-[400px] font-normal leading-5 md:leading-6 md:text-[21px]">
             I&apos;m an experienced product designer with a keen interest in
             web3 particularly{" "}
             <span className="text-dark-text">Chain Abstraction</span> and how to

@@ -1,9 +1,9 @@
 "use client";
 
 import { IDesignExperience } from "@/types";
-import Image from "next/image";
+import useEmblaCarousel from "embla-carousel-react";
 import Link from "next/link";
-import React, { act, useState } from "react";
+import React, { act, useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight, Twitter } from "react-feather";
 
 function DesignExperience({
@@ -14,19 +14,14 @@ function DesignExperience({
   color,
   link,
 }: IDesignExperience) {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [emblaRef, embla] = useEmblaCarousel({ loop: true });
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
-  const transitionLeft = () => {
-    setActiveIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
-
-  const transitionRight = () => {
-    setActiveIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
+  useEffect(() => {
+    if (embla) {
+      embla.on("select", () => setSelectedIndex(embla.selectedScrollSnap()));
+    }
+  }, [embla]);
 
   return (
     <div
@@ -34,7 +29,20 @@ function DesignExperience({
       style={{ backgroundColor: color }}
     >
       <div className="relative w-full flex overflow-hidden mb-8">
-        {images.map((image, i) => {
+        <div className="overflow-hidden" ref={emblaRef}>
+          <div className="flex">
+            {images.map((image, i) => (
+              <div key={i} className="flex-[0_0_100%]">
+                <img
+                  src={image}
+                  alt={`Slide ${i}`}
+                  className="w-full h-auto rounded-md"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* {images.map((image, i) => {
           //   if (position < -100 * (images.length - 1)) {
           //     position += 100 * images.length;
           //   } else if (position > 100 * (images.length - 1)) {
@@ -58,25 +66,25 @@ function DesignExperience({
               />
             </div>
           );
-        })}
+        })} */}
         <div
-          onClick={transitionLeft}
-          className="absolute rounded-full left-4 opacity-30 bg-[#808080] top-1/2 -translate-y-1/2 h-10 w-10 flex items-center justify-center"
+          onClick={() => embla?.scrollPrev()}
+          className="absolute cursor-pointer rounded-full left-4 opacity-30 bg-[#808080] top-1/2 -translate-y-1/2 h-10 w-10 flex items-center justify-center"
         >
           <ChevronLeft color="#ffffff" />
         </div>
         <div
-          onClick={transitionRight}
-          className="absolute rounded-full right-4 opacity-30 bg-[#808080] top-1/2 -translate-y-1/2 h-10 w-10 flex items-center justify-center"
+          onClick={() => embla?.scrollNext()}
+          className="absolute cursor-pointer rounded-full right-4 opacity-30 bg-[#808080] top-1/2 -translate-y-1/2 h-10 w-10 flex items-center justify-center"
         >
           <ChevronRight color="#ffffff" />
         </div>
-        <div className="absolute px-4 py-3 rounded-full round bottom-4 opacity-30 bg-[#808080] left-1/2 -translate-x-1/2 flex items-center gap-1.5">
+        <div className="absolute px-4 py-3 rounded-full round bottom-4 bg-[#808080]/30 left-1/2 -translate-x-1/2 flex items-center gap-1.5">
           {images.map((_, i) => (
             <div
               key={i}
               className={`h-3 w-3 rounded-full bg-white ${
-                i !== activeIndex ? "opacity-30" : "opacity-100"
+                i !== selectedIndex ? "opacity-30" : "opacity-100"
               }`}
             />
           ))}

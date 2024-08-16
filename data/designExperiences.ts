@@ -10,8 +10,11 @@ export const designExperiences: IDesignExperience[] = [
     role: "Lead Product Designer",
     images: [
       "/design-experiences/loubby/Image1.png",
-      "/design-experiences/loubby/Image1.png",
-      "/design-experiences/loubby/Image1.png",
+      "/design-experiences/loubby/Image2.png",
+      "/design-experiences/loubby/Image3.png",
+      "/design-experiences/loubby/Image4.png",
+      "/design-experiences/loubby/Image5.png",
+      "/design-experiences/loubby/Image6.png",
     ],
   },
   {
@@ -23,8 +26,10 @@ export const designExperiences: IDesignExperience[] = [
     role: "Product Designer",
     images: [
       "/design-experiences/express-gene/Image1.png",
-      "/design-experiences/express-gene/Image1.png",
-      "/design-experiences/express-gene/Image1.png",
+      "/design-experiences/express-gene/Image2.png",
+      "/design-experiences/express-gene/Image3.png",
+      "/design-experiences/express-gene/Image4.png",
+      "/design-experiences/express-gene/Image5.png",
     ],
   },
   {
@@ -36,8 +41,7 @@ export const designExperiences: IDesignExperience[] = [
     role: "Product Designer",
     images: [
       "/design-experiences/cyberlandr/Image1.png",
-      "/design-experiences/cyberlandr/Image1.png",
-      "/design-experiences/cyberlandr/Image1.png",
+      "/design-experiences/cyberlandr/Image2.png",
     ],
   },
   {
@@ -48,9 +52,8 @@ export const designExperiences: IDesignExperience[] = [
     color: "#FBF7FE",
     role: "Product Designer",
     images: [
-      "/design-experiences/montery/Image1.png",
-      "/design-experiences/montery/Image1.png",
-      "/design-experiences/montery/Image1.png",
+      "/design-experiences/monterey/Image1.png",
+      "/design-experiences/monterey/Image2.png",
     ],
   },
 ];
