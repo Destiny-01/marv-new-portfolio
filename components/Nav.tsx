@@ -12,7 +12,14 @@ function Nav() {
         height={0}
         className="h-10 w-fit"
       />
-      <div className="flex items-center gap-x-4">
+      <Image
+        src="/hamburger.svg"
+        alt="Logo"
+        width={24}
+        height={24}
+        className="h-6 w-6 md:hidden"
+      />
+      <div className="md:flex hidden items-center gap-x-4">
         <a href="#" className="text-dark-text">
           Work
         </a>

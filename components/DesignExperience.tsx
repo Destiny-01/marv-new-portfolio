@@ -30,7 +30,7 @@ function DesignExperience({
 
   return (
     <div
-      className={`bg-[${color}] w-full p-8 rounded-lg`}
+      className={`bg-[${color}] w-full md:p-8 p-6 rounded-lg`}
       style={{ backgroundColor: color }}
     >
       <div className="relative w-full flex overflow-hidden mb-8">
@@ -82,7 +82,7 @@ function DesignExperience({
           ))}
         </div>
       </div>
-      <div className="flex justify-between">
+      <div className="md:flex justify-between">
         <div className="flex gap-4">
           <div className="flex flex-col gap-2">
             <p className="text-dark-text">Project:</p>
@@ -97,7 +97,7 @@ function DesignExperience({
             </Link>
           </div>
         </div>
-        <p className="max-w-[500px]">{description}</p>
+        <p className="max-w-[500px] mt-6 md:mt-0">{description}</p>
       </div>
     </div>
   );

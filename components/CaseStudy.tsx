@@ -7,7 +7,7 @@ import { Twitter } from "react-feather";
 function CaseStudy({ title, description, image, color, link }: ICaseStudy) {
   return (
     <div
-      className={`bg-[${color}] w-full p-8 rounded-lg`}
+      className={`bg-[${color}] w-full md:p-8 p-6 rounded-lg`}
       style={{ backgroundColor: color }}
     >
       <img
