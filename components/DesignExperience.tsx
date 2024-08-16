@@ -97,7 +97,7 @@ function DesignExperience({
             </Link>
           </div>
         </div>
-        <p className="max-w-[500px] mt-6 md:mt-0">{description}</p>
+        <p className="max-w-[500px] mt-6 md:mt-0 text-base">{description}</p>
       </div>
     </div>
   );

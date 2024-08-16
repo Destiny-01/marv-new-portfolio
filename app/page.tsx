@@ -16,7 +16,7 @@ export default function Home() {
           Designing For <br /> Web3 Companies
         </h1>
         <div className="md:flex mt-6 gap-12">
-          <p className="md:w-[400px] font-medium text-lg leading-5 md:leading-6 md:text-[21px]">
+          <p className="md:w-[400px] font-medium text-base leading-5 md:leading-6 md:text-[21px]">
             I&apos;m an experienced product designer with a keen interest in
             web3 particularly{" "}
             <span className="text-dark-text">Chain Abstraction</span> and how to
@@ -31,7 +31,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="md:my-12 my-10">
+      <div className="md:my-12 my-10" id="works">
         <p className="text-lg md:text-[21px] text-dark-text font-medium">
           Chain Abstraction Explorations
         </p>
@@ -51,7 +51,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div className="my-10 md:my-14">
+      <div className="my-10 md:my-14" id="info">
         <h4 className="font-medium mb-8 text-xl md:text-2xl md:w-[536px]">
           I&apos;m open to full time UX and Product Roles preferably in the
           Chain Abstraction Ecosystem

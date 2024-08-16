@@ -18,6 +18,10 @@ const config: Config = {
         "dark-text": "#101010",
         "body-text": "#6F717C",
       },
+      boxShadow: {
+        "card-shadow":
+          "0px 4px 6px -2px #10182808, 0px 12px 16px -4px #10182814",
+      },
     },
   },
   plugins: [],
