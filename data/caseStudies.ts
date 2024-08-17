@@ -5,7 +5,7 @@ export const caseStudies: ICaseStudy[] = [
     title: "DeFi Portfolio Manager",
     description:
       "A real life application of Chain Abstraction in DeFi powered by the intent-solver mechanism",
-    link: "https://twitter.com/",
+    link: "https://twitter.com/vello01/status/1824541689534615909",
     color: "#F5FBF5",
     image: "/case-study/defi-portfolio.png",
   },

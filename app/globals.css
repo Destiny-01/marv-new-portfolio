@@ -5,7 +5,7 @@
 @layer base {
   p,
   a {
-    @apply text-body-text text-base md:text-[17px] font-light leading-tight;
+    @apply text-body-text text-base md:text-[17px] font-normal leading-tight;
   }
 }
 

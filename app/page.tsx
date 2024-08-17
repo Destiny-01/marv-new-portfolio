@@ -5,6 +5,7 @@ import Nav from "@/components/Nav";
 import { caseStudies } from "@/data/caseStudies";
 import { designExperiences } from "@/data/designExperiences";
 import Image from "next/image";
+import Link from "next/link";
 import { Dribbble, Twitter } from "react-feather";
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
           Designing For <br /> Web3 Companies
         </h1>
         <div className="md:flex mt-6 gap-12">
-          <p className="md:w-[400px] font-normal leading-5 md:leading-6 md:text-[21px]">
+          <p className="md:w-[400px] font-medium leading-5 md:leading-6 md:text-[21px]">
             I&apos;m an experienced product designer with a keen interest in
             web3 particularly{" "}
             <span className="text-dark-text">Chain Abstraction</span> and how to
@@ -24,8 +25,8 @@ export default function Home() {
           </p>
           <div className="h-px w-full bg-body-text/50 my-6 md:hidden"></div>
           <p className="md:w-[450px]">
-            This interest has lead me to hours of research and deep dive into
-            the ChA hemisphere to become very knowledgeable in the movement.
+            This interest has led me to hours of research and deep dive into the
+            ChA hemisphere to become very knowledgeable in the movement.
             I&apos;ve also led design teams for Web2 companies and now I&apos;m
             eager to bring my experience to the Chain Abstraction ecosystem
           </p>
@@ -57,9 +58,13 @@ export default function Home() {
           Chain Abstraction Ecosystem
         </h4>
         <p>Send an email on</p>
-        <h4 className="font-medium mb-1 text-xl md:text-2xl md:w-[536px]">
+        <Link
+          target="_blank"
+          href="mailto:aigbemarvellous01@gmail.com?subject=Job%20Inquiry"
+          className="font-medium underline mb-1 text-xl md:text-2xl md:w-[536px]"
+        >
           aigbemarvellous01@gmail.com
-        </h4>
+        </Link>
       </div>
       <Footer />
     </div>

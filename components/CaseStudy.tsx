@@ -23,12 +23,16 @@ function CaseStudy({ title, description, image, color, link }: ICaseStudy) {
         </p>
         <p>{description}</p>
         {link ? (
-          <Link href={link} className="flex gap-2 mt-4 items-center">
+          <Link
+            target="_blank"
+            href={link}
+            className="flex gap-2 mt-4 items-center"
+          >
             <p className="text-dark-text font-medium">Read More on Twitter</p>
             <Twitter color="#101010" size={16} />
           </Link>
         ) : (
-          <p className="text-dark-text font-medium">Coming soon...</p>
+          <p className="text-dark-text mt-4 font-medium">Coming soon...</p>
         )}
       </div>
     </div>

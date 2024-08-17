@@ -42,12 +42,12 @@ function Nav() {
         />
       </div>
       <div className="md:flex hidden items-center gap-x-4">
-        <a href="#works" className="text-dark-text">
+        <Link href="#works" className="text-dark-text">
           Work
-        </a>
-        <a href="#info" className="text-dark-text">
+        </Link>
+        <Link href="#info" className="text-dark-text">
           Info
-        </a>
+        </Link>
         <Link
           target="_blank"
           href="mailto:aigbemarvellous01@gmail.com?subject=Job%20Inquiry"
@@ -59,12 +59,12 @@ function Nav() {
       </div>
       {showNav && (
         <div className="bg-white absolute top-[75px] right-1 shadow-card-shadow p-4 flex flex-col rounded-lg gap-6">
-          <a href="#works" className="text-dark-text">
+          <Link href="#works" className="text-dark-text">
             Work
-          </a>
-          <a href="#info" className="text-dark-text">
+          </Link>
+          <Link href="#info" className="text-dark-text">
             Info
-          </a>
+          </Link>
           <Link target="_blank" href="mailto:aigbemarvellous01@gmail.com">
             <button className="border border-dark-text text-dark-text px-4 py-2 rounded text-base font-medium">
               Send a message

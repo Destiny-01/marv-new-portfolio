@@ -69,21 +69,21 @@ function DesignExperience({
         })} */}
         <div
           onClick={() => embla?.scrollPrev()}
-          className="absolute cursor-pointer rounded-full left-4 opacity-30 bg-[#808080] top-1/2 -translate-y-1/2 h-10 w-10 flex items-center justify-center"
+          className="absolute md:flex hidden cursor-pointer rounded-full left-4 opacity-30 bg-[#808080] top-1/2 -translate-y-1/2 h-10 w-10 items-center justify-center"
         >
           <ChevronLeft color="#ffffff" />
         </div>
         <div
           onClick={() => embla?.scrollNext()}
-          className="absolute cursor-pointer rounded-full right-4 opacity-30 bg-[#808080] top-1/2 -translate-y-1/2 h-10 w-10 flex items-center justify-center"
+          className="absolute md:flex hidden cursor-pointer rounded-full right-4 opacity-30 bg-[#808080] top-1/2  -translate-y-1/2 h-10 w-10 items-center justify-center"
         >
           <ChevronRight color="#ffffff" />
         </div>
-        <div className="absolute px-4 py-3 rounded-full round bottom-4 bg-[#808080]/30 left-1/2 -translate-x-1/2 flex items-center gap-1.5">
+        <div className="absolute px-4 md:py-3 py-2.5 rounded-full round bottom-4 bg-[#808080]/30 left-1/2 -translate-x-1/2 flex items-center gap-1.5">
           {images.map((_, i) => (
             <div
               key={i}
-              className={`h-3 w-3 rounded-full bg-white ${
+              className={`md:h-3 md:w-3 h-2 w-2 rounded-full bg-white ${
                 i !== selectedIndex ? "opacity-30" : "opacity-100"
               }`}
             />
@@ -100,7 +100,11 @@ function DesignExperience({
           <div className="flex flex-col gap-2">
             <p className="text-body-text">{project}</p>
             <p className="text-body-text">{role}</p>
-            <Link href={link} className="text-dark-text underline">
+            <Link
+              target="_blank"
+              href={link}
+              className="text-dark-text underline"
+            >
               {link}
             </Link>
           </div>

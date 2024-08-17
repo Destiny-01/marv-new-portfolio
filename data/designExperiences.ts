@@ -48,7 +48,7 @@ export const designExperiences: IDesignExperience[] = [
     project: "Monterey Escape",
     description:
       "Built a new dedicated website for a major Costa Rican Based Housing Construction company to showcase their offerings and the benefits of purchasing a house in Costa Rica",
-    link: "www.mymontereyescape.com",
+    link: "https://mymontereyescape.com",
     color: "#FBF7FE",
     role: "Product Designer",
     images: [
