@@ -25,7 +25,7 @@ function Nav() {
     <div className="flex relative py-8 items-center justify-between">
       <Link href="/#">
         <Image
-          src="/logo.svg"
+          src="/logo1.svg"
           alt="Logo"
           width={0}
           height={0}
@@ -50,7 +50,7 @@ function Nav() {
         </Link>
         <Link
           target="_blank"
-          href="mailto:aigbemarvellous01@gmail.com?subject=Job%20Inquiry"
+          href="mailto:aigbeprecious100@gmail.com?subject=Job%20Inquiry"
         >
           <button className="border border-dark-text text-dark-text px-4 py-2 rounded text-base font-medium">
             Send a message
@@ -65,7 +65,7 @@ function Nav() {
           <Link href="#info" className="text-dark-text">
             Info
           </Link>
-          <Link target="_blank" href="mailto:aigbemarvellous01@gmail.com">
+          <Link target="_blank" href="mailto:aigbeprecious100@gmail.com">
             <button className="border border-dark-text text-dark-text px-4 py-2 rounded text-base font-medium">
               Send a message
             </button>
