@@ -8,7 +8,7 @@ function Footer() {
     <div className="flex w-full flex-col md:flex-row py-8 gap-8 md:items-center justify-between">
       <Link href="/#">
         <Image
-          src="/logo.svg"
+          src="/logo1.svg"
           alt="Logo"
           width={0}
           height={0}
