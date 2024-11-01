@@ -43,8 +43,8 @@ export default function Home() {
       </div>
       <div className="my-10 md:my-14" id="info">
         <h4 className="font-medium mb-8 text-xl md:text-2xl md:w-[536px]">
-          I'm open to full time UX and Product Roles both Remote or based in
-          Canada
+          I&apos;m open to full time UX and Product Roles both Remote or based
+          in Canada
         </h4>
         <p>Send an email on</p>
         <Link
